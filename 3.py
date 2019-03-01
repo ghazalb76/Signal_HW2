@@ -2,12 +2,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
+
+print("Please enter the array of x:")
 x = list(map(int, input().split()))
+print("Please enter the array of y:")
 y = list(map(int, input().split()))
+
 f = dict(zip(x, y))
 fo = [(f[i] - f[-i])/2 for i in x]
 fe = [(f[i] + f[-i])/2 for i in x]
-
 
 # original signal
 chart1 = plt.subplot(311)
