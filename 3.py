@@ -1,14 +1,24 @@
-# import math
 import numpy as np
 import matplotlib.pyplot as plt
+import math
+
+x = list(map(int, input().split()))
+y = list(map(int, input().split()))
+f = dict(zip(x, y))
+fo = [(f[i] - f[-i])/2 for i in x]
+fe = [(f[i] + f[-i])/2 for i in x]
 
 
-y = input("signal?")
-print(y)
+# original signal
+chart1 = plt.subplot(311)
+plt.plot(x, y)
 
-#discrete
-x = np.arange(-70.0, 70.0, 1)
-plt.stem(x,y)
+# odd part of signal
+chart2 = plt.subplot(312)
+plt.plot(x, fo)
 
-#show
+# even part of signal
+chart3 = plt.subplot(313)
+plt.plot(x, fe)
+
 plt.show()
