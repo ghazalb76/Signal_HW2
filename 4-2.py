@@ -8,7 +8,7 @@ e = np.e
 pi = np.pi
 
 #continuous
-x = np.arange(0, 2*pi, 0.1)
+x = np.arange(-5, 5, 0.1)
 y = 2*np.asarray([e**(n) for n in list(x)])
 plt.plot(x,y)
 

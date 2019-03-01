@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 #continuous
-x = np.arange(0, 6, 0.01)
+x = np.arange(-5, 5, 0.01)
 y = np.cos(np.pi/3*x+np.pi/4)
 plt.plot(x,y)
 
