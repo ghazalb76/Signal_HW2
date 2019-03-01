@@ -12,5 +12,10 @@ x = np.arange(-5, 5, 0.1)
 y = np.asarray([2*e**(n) for n in list(x)])
 plt.plot(x,y)
 
+#discrete
+x = np.arange(-5, 5, 1)
+y = np.asarray([2*e**(n) for n in list(x)])
+plt.stem(x,y)
+
 #show
 plt.show()
