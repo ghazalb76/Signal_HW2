@@ -9,7 +9,7 @@ pi = np.pi
 
 #continuous
 x = np.arange(-5, 5, 0.1)
-y = 2*np.asarray([e**(n) for n in list(x)])
+y = np.asarray([2*e**(n) for n in list(x)])
 plt.plot(x,y)
 
 #show
